@@ -1,0 +1,22 @@
+# Ignorar arquivos do Windows
+Thumbs.db
+Desktop.ini
+*.lnk
+
+# Pastas de sistema
+AppData/
+OneDrive/
+iCloudDrive/
+
+# VSCode
+.vscode/
+
+# Compilação C++
+*.exe
+*.out
+*.obj
+*.o
+
+# Python (se usar no mesmo projeto)
+__pycache__/
+*.pyc
