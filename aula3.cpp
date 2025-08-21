@@ -5,4 +5,4 @@ int main() {
     system("pausa"); //inclui uma pausa, pressionando qualquer tecla ele ativa//
 
     return 0; 
-    //
+    
