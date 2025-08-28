@@ -20,3 +20,7 @@ iCloudDrive/
 # Python (se usar no mesmo projeto)
 __pycache__/
 *.pyc
+
+# Executáveis gerados sem extensão (Linux)
+aula*
+main
