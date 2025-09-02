@@ -5,7 +5,7 @@ int n1, n2; //variáveis globais (escopo global, podem ser acessadas de qualquer
 
 int main() {
 
-    // operadores matemáticos: ()/ * + - % 
+    // operadores matemáticos: ()/ * + - % (mode)
 
     int n3, n4; //variáveis locais, não poderão ser acessadas por outras funções (escopo local)
     int res;
