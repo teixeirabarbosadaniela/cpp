@@ -1,26 +1,36 @@
+# ==========================
 # Ignorar arquivos do Windows
+# ==========================
 Thumbs.db
 Desktop.ini
 *.lnk
 
+# ==========================
 # Pastas de sistema
+# ==========================
 AppData/
 OneDrive/
 iCloudDrive/
 
+# ==========================
 # VSCode
+# ==========================
 .vscode/
 
-# Compilação C++
+# ==========================
+# Compilação C++ (executáveis e objetos)
+# ==========================
 *.exe
 *.out
 *.obj
 *.o
 
-# Python (se usar no mesmo projeto)
+# Executáveis gerados sem extensão (Linux)
+aula
+main
+
+# ==========================
+# Python (caso use no mesmo projeto)
+# ==========================
 __pycache__/
 *.pyc
-
-# Executáveis gerados sem extensão (Linux)
-aula*
-main
