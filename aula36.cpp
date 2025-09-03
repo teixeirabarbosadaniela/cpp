@@ -15,20 +15,12 @@ int main(){
 
     cout << "\n\n" << veiculo << "\n\n" << *pv;
 
-
-
-
-
-
 /*
 int *pn; // operador de ponteiro *
 pn= &num; //operador de endeço &
 
 cout << pn "\n\n";
 */
-
-
-
 
     return 0;
 }
