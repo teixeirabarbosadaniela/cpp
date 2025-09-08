@@ -1,9 +1,14 @@
 #include <iostream>
+#include <cstdlib>
 using namespace std;
 int main() {
 
     int n1,n2,res;
     char opc;
+
+    inicio: //lable
+    
+    system("cls"); //comando do DOS para limpar a tela pós loop e, pra ele funcionar, precisa adc biblioteca <cstdlib>""
 
     cout << "Digite o valor da nota 1: ";
     cin >> n1;
@@ -28,5 +33,12 @@ int main() {
         cout << "\nAluno reprovado\n";
     }
 
+    cout << "\nDigitar outras notas? (s/n): \n";
+    cin >> opc;
+
+    if(opc=='s' or opc=='S') {
+        goto inicio;
+    }
+ 
     return 0;
 }
