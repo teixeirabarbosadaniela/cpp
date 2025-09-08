@@ -6,7 +6,7 @@ int main() {
     int n1,n2,res;
     char opc;
 
-    inicio: //lable
+    inicio: //lable, ao encontrá-lo, retorna no loop
     
     system("cls"); //comando do DOS para limpar a tela pós loop e, pra ele funcionar, precisa adc biblioteca <cstdlib>""
 
