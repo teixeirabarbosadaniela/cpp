@@ -19,7 +19,7 @@ int main(){
 
     int val;
 
-/*
+    /*  
     cout << "Selecione uma cor:\n";
     cout << "[1]=verde, [2]=azul, [3]=vermelho\n";
 
@@ -41,11 +41,12 @@ int main(){
     }
     */
 
+
+    /*
     cout << "Selecione uma cor:\n";
     cout << "[1,2,3]=verde, [4,5,6]=azul\n";
 
     cin >> val;
-
 
     switch(val) {
         case 1:
@@ -63,6 +64,48 @@ int main(){
         default:
             cout << "Valor selecionado invalido\n";
     }
+    */
+
+
+
+    cout << "Selecione um transporte:\n";
+    cout << "[1]=carro, [2]=moto, [3]=aviao, [4]=helicoptero\n";
+
+    cin >> val;
+
+    switch(val) {
+        case 1:
+        case 2:
+            cout << "\nTransporte terrestre\n";
+
+            switch(val){ //switch aninhado! atenção que entra antes do break do case principal:)
+                case 1:
+                    cout << "carro selecionado\n";
+                    break;
+                case 2:
+                    cout << "moto selecionada\n";
+                    break;
+            }
+            break;
+
+        case 3:
+        case 4:
+            cout << "Transporte aereo\n";
+
+            switch(val){ //switch aninhado! atenção que entra antes do break do case principal:)
+                case 3:
+                    cout << "aviao selecionado\n";
+                    break;
+                case 4:
+                    cout << "helicoptero selecionado\n";
+                    break;
+            }
+            break;
+
+        default:
+            cout << "Valor selecionado invalido\n";
+    }
+
 
     cout << "\nPrograma finalizado\n";
 
