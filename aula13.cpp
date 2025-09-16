@@ -98,6 +98,7 @@ int main(){
                     break;
                 case 4:
                     cout << "helicoptero selecionado\n";
+
                     break;
             }
             break;
@@ -107,7 +108,7 @@ int main(){
     }
 
 
-    cout << "\nPrograma finalizado\n";
+    cout << "\nPrograma finalizado\n\n";
 
     return 0;
 }
