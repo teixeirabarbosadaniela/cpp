@@ -26,11 +26,17 @@ int main() {
         cout << x << " - " << y << "\n";
     */
 
+    
     int x,y,z;
-    for(x=0,y=1,z=0 ; x<=10 && z<=6 ; x++,y+=2,z+=2) {
+    for(x=0,y=1,z=0 ; x<=10 && z<=6 ; x++,y+=2,z+=2) { //variações
         cout << x << " - " << y << " - " << z << "\n";
     }
+    
 
+    /*
+    int x;
+    for(int tmp=0; tmp < 1000000000 ; tmp++); // FOR sem corpo serve para dar uma pausa no processamento
+    */
 
     return 0;
 }
