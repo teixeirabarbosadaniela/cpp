@@ -5,6 +5,8 @@ int main(){
 
 //jogo da forca
 
+/* (minha tentativa com prof)
+
 char palavra[30],letra[1],secreta[30];
 int tam,i,chances,acertos;
 bool acerto;
@@ -64,4 +66,71 @@ cin >> palavra;
 
     return 0;
 }
-//nao consegui identificar onde estou errando para o jogo nao passar pelos loops
+*/
+
+//tentativa gpt
+
+#include <iostream>
+#include <stdlib.h> 
+using namespace std;
+
+int main() {
+    char palavra[30], secreta[30];
+    char letra;
+    int tam = 0, i, chances = 6, acertos = 0;
+    bool acerto;
+
+    cout << "Fale para seu amigo tampar os olhos e digite a palavra secreta: \n";
+    cin >> palavra;
+    system("clear"); // limpa a tela no Linux
+
+    // Descobre o tamanho da palavra
+    while (palavra[tam] != '\0') {
+        tam++;
+    }
+
+    // Inicializa a palavra secreta com tracinhos
+    for (i = 0; i < tam; i++) {
+        secreta[i] = '-';
+    }
+    secreta[tam] = '\0'; // marca o fim da string
+
+    // Loop principal do jogo
+    while ((chances > 0) && (acertos < tam)) {
+        cout << "Jogadas restantes: " << chances << "\n\n";
+        cout << "Palavra secreta: " << secreta << "\n\n";
+
+        cout << "Digite uma letra: ";
+        cin >> letra;
+
+        acerto = false;
+        for (i = 0; i < tam; i++) {
+            if (palavra[i] == letra && secreta[i] == '-') {
+                secreta[i] = palavra[i];
+                acertos++;
+                acerto = true;
+            }
+        }
+
+        if (!acerto) {
+            chances--;
+        }
+
+        system("clear");
+    }
+
+    // Resultado final
+    if (acertos == tam) {
+        cout << "Parabéns, você venceu! 🎉\n";
+    } else {
+        cout << "Que pena, você perdeu! A palavra era: " << palavra << "\n";
+    }
+
+    cout << "\nPressione ENTER para sair...";
+    cin.ignore();
+    cin.get();
+
+    return 0;
+}
+
+//também deu erro (linha 77)
