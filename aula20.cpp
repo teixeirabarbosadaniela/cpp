@@ -18,7 +18,7 @@ acertos=0;
 
 cout << "Fale para seu amigo tampar os olhos e digite a palavra secreta: \n";
 cin >> palavra;
-    system("cls"); //limpa a tela pra obter a palavra secreta
+    system("clear"); //limpa a tela pra obter a palavra secreta
 
     while(palavra[i] != '\0') { //flag para indicar que encerrou a string/conteudo digitado
         i++; //para passar para a proxima posição
@@ -47,10 +47,10 @@ cin >> palavra;
             }
         }
         if (!acerto){//se nao houve acerto, diminuo nivel de chances
-            chances --;
+            chances--;
         }
         acerto=false;
-        system("cls");{
+        system("clear");{
         }
     }
     if(acertos==tam){
@@ -64,3 +64,4 @@ cin >> palavra;
 
     return 0;
 }
+//nao consegui identificar onde estou errando para o jogo nao passar pelos loops
