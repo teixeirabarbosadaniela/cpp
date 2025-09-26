@@ -39,7 +39,7 @@ int matriz[linhas][colunas de cada linha]= valor
 
     */
 
-    /* automatizando:
+    //automatizando:
 
     int matriz[3][4];
     int l,c;
@@ -56,8 +56,9 @@ int matriz[linhas][colunas de cada linha]= valor
         }
         cout << "\n";
     }
-    */
 
+
+    /*
     int matriz[3][4];
     int l,c;
 
@@ -73,7 +74,7 @@ int matriz[linhas][colunas de cada linha]= valor
         }
         cout << "\n";
     }
-
+    */
 
     return 0;
 }
