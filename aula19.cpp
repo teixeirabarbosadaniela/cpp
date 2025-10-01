@@ -64,7 +64,7 @@ int matriz[linhas][colunas de cada linha]= valor
 
     for(l=0;l<3;l++){ 
         for(c=0;c<4;c++){ 
-            cin >> matriz[l][c]; //recebendo pelo teclado (digitar 3x (linhas) 4 digitos (coluna) seguido do enter)
+            cin >> matriz[l][c]; //recebendo via teclado (digitar 3x (linhas) 4 digitos (coluna) seguido do enter)
             }   
         }
     
